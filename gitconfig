@@ -1,0 +1,18 @@
+[color]
+  ui = true
+[alias]
+    co = checkout
+    st = status -sb
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	who = !echo \"== Commits by Author:\\n`git shortlog -s -n`\\n\"
+[user]
+	email = marcelor@gmail.com
+	name = Marcelo Ramos
+[push]
+	default = current
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[branch]
+	autosetuprebase = always
