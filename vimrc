@@ -190,3 +190,6 @@ set nospell
 " In visual mode Control-m toggle the coment state of the visually selected block
 vnoremap <silent> <C-m> <ESC>:call NERDComment(1, "toggle")<cr>
 
+" Remove ugly vertical pipe used by Vim to draw the vertical separator between windows
+set fillchars-=vert:\| | set fillchars+=vert:\ 
+
